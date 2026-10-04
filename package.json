@@ -1,0 +1,25 @@
+{
+  "name": "tool-call-idempotency",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Retries and idempotency keys for agent tool calls in TypeScript. Mocked billing service, no API key.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Bobby Hall Jr (https://bhjr.dev)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobbyhalljr/tool-call-idempotency.git"
+  },
+  "scripts": {
+    "start": "tsx retry.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

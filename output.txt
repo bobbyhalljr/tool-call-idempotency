@@ -1,0 +1,31 @@
+Task: charge acme $49.00 exactly once (MOCK billing, no API key)
+
+Fault: none
+  naive retry          charges=1  ok         agent said: completed
+  verify then retry    charges=1  ok         agent said: completed
+  new key per attempt  charges=1  ok         agent said: completed
+  pinned intent key    charges=1  ok         agent said: completed
+
+Fault: lost-ack
+  naive retry          charges=2  DUPLICATE  agent said: completed
+  verify then retry    charges=1  ok         agent said: completed
+  new key per attempt  charges=2  DUPLICATE  agent said: completed
+  pinned intent key    charges=1  ok         agent said: completed
+
+Fault: late-commit
+  naive retry          charges=2  DUPLICATE  agent said: completed
+  verify then retry    charges=2  DUPLICATE  agent said: completed
+  new key per attempt  charges=2  DUPLICATE  agent said: completed
+  pinned intent key    charges=1  ok         agent said: completed
+
+Fault: redelivery
+  naive retry          charges=2  DUPLICATE  agent said: completed
+  verify then retry    charges=2  DUPLICATE  agent said: completed
+  new key per attempt  charges=1  ok         agent said: completed
+  pinned intent key    charges=1  ok         agent said: completed
+
+Duplicates: 7 of 16 runs
+Duplicates the agent reported as completed: 7
+
+Key reuse with a different amount:
+  idempotency key reused with different parameters
