@@ -109,7 +109,7 @@ This is a teaching layer.
 
 ## Read more
 
-- Dev.to: [A Timeout Is Not a Failure: Build Idempotent Tool Calls for AI Agents in TypeScript](DEV_URL)
+- Dev.to: [A Timeout Is Not a Failure: Build Idempotent Tool Calls for AI Agents in TypeScript](https://dev.to/bobbyhalljr/a-timeout-is-not-a-failure-build-idempotent-tool-calls-for-ai-agents-in-typescript-54d1)
 - Substack: [A Timeout Is Not a Failure: Build Idempotent Tool Calls for AI Agents in TypeScript](SUBSTACK_URL)
 - Sources: [arXiv 2609.29095](https://arxiv.org/abs/2609.29095), [Stripe idempotent requests](https://docs.stripe.com/api/idempotent_requests), [Amazon Builders' Library: Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/)
 
